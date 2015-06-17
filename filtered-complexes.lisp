@@ -2,7 +2,9 @@
 ;; FILTERED-COMPLEXES   FILTERED-COMPLEXES   FILTERED-COMPLEXES   FILTERED-COMPLEXES
 ;; FILTERED-COMPLEXES   FILTERED-COMPLEXES   FILTERED-COMPLEXES   FILTERED-COMPLEXES
 
-(IN-PACKAGE "COMMON-LISP-USER")
+(require :asdf)
+(require :kenzo)
+(IN-PACKAGE #:cat)
 
 (provide "filtered-complexes")
 
@@ -840,4 +842,4 @@
                   (if (eql :bcnc bcnx)
                      (funcall flinc degr (ibicn bicn))
                      (funcall flind degr (ibicn bicn)))))))
-     (the chcm-flin #'rslt))) 
+     (the chcm-flin #'rslt)))

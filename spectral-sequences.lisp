@@ -2,8 +2,9 @@
 ;; SPECTRAL-SEQUENCES   SPECTRAL-SEQUENCES   SPECTRAL-SEQUENCES   SPECTRAL-SEQUENCES
 ;; SPECTRAL-SEQUENCES   SPECTRAL-SEQUENCES   SPECTRAL-SEQUENCES   SPECTRAL-SEQUENCES
 
-
-(IN-PACKAGE "COMMON-LISP-USER")
+(require :asdf)
+(require :kenzo)
+(IN-PACKAGE #:cat)
 
 (provide "spectral-sequences")
 
@@ -1357,3 +1358,4 @@
           (hmeq (efhm X))
           (eX (rbcc efhm))
 |#
+
